@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Favoritos</h1>
+        <input type="text" id="buscadorFavoritos" placeholder="Buscar Pokémon...">
+        <a href="main.html" id="enlacePrincipal" class="boton">Volver a la lista principal</a>
+    </header>
+    <main id="listaFavoritos"></main>
+
+    <div id="modalPokemon" class="modal">
+        <div class="contenido-modal">
+            <img id="cerrarModal" src="imagenes/cross.png" alt="Cerrar" class="icono-cerrar">
+            <h2 id="nombreModal"></h2>
+            <div class="fondo-pokemon">
+                <img id="imagenModal" alt="Imagen del Pokémon">
+            </div>
+            <p><strong>Tipo:</strong> <span id="tiposModal"></span></p>
+            <p><strong>Altura:</strong> <span id="alturaModal"></span></p>
+            <p><strong>Peso:</strong> <span id="pesoModal"></span></p>
+            <p><strong>Habilidades:</strong> <span id="habilidadesModal"></span></p>
+        </div>
+    </div>    
+
+    <script src="favoritos.js"></script>
+</body>
+</html>

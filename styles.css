@@ -122,3 +122,31 @@ main {
 .boton-favorito:active {
     transform: scale(1.1);
 }
+
+.paginacion {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.paginacion button {
+    background-color: #f5ba4c;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.paginacion button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.paginacion button:hover:not(:disabled) {
+    background-color: #d4a045;
+}
+
